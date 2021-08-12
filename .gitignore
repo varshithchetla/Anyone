@@ -1,1 +1,35 @@
+import datetime
+
+BirthYear = input("Write your BirthYear here! - ")
+age = datetime.datetime.now().year- int(BirthYear)
+Is_Under_18 = False
+if(age >= 18):
+  Is_Under_18 = True
+else:
+  Is_Under_18 = False
+
+print("Your age is - ",age)
+
+def Ask():
+	if(age <= 0):
+ 		print("Your not even born!")
+	elif(age == 9):
+		print("Chinu Did wewe")
+	elif(age >= 14 and age <= 18):
+  		print("Your a teen")
+	elif(age <= 18):
+  		print("Your a kid ")
+	elif(age == 18 ):
+  		print("Your a adult")
+	elif(age == 90 ):
+  		print("Wow , How did u survive?")
+	elif(age >= 100):
+  		print("Your a ghost")
+	elif(age >= 1000 ):
+		print("Your from the kings time")
+
+
+			
+Ask()
+
 
